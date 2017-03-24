@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Html page for testing emmet in sublime</title>
+	<meta charset="utf-8">
+	<!-->linking style sheet</!-->
+	link:css[href="sytle.css"]
+</head>
+<body>
+<div class="block"></div>
+<h1>title info</h1>
+<p>lorem ipsum</p>
+<p>lorem ipsum</p>
+<p>lorem ipsum</p>
+
+<!-->differetnt values of p</!-->
+.blocks*2>h2{sub-title}+img+p>lorem
+
+<!-->climbing</!-->
+.container>h1{title h1}+p>lorem>a{click here}^p
+
+<!-->grouping</!-->
+.container>h1{title h1}+(p>lorem+a{click here})+p
+
+<!-->numbers</!-->
+.container>img[classs="thumbnail $"]*5
+.container>img[classs="thumbnail_$"]*5
+.container>img.thumbnail_$*5 <!-->cannot keep a space before $</!-->
+.container>img[classs="thumbnail_3$"]*5
+.container>img[classs="thumbnail $@6"]*5
+.container>img[classs="thumbnail $@-11"]*5
+
+<!-->commenting- select all and ctrl / </!-->
+<!-- <div class="container">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi atque, necessitatibus modi sequi obcaecati id porro, reprehenderit a soluta commodi temporibus dolorem voluptas. Laboriosam blanditiis, dignissimos omnis unde officia excepturi!</p>
+</div>
+ -->
+
+<!-->Inserting attributes</!-->
+.container-fluid>img[src="http://placeholder.it/200*499"]
+a[href="sample.com"]{click here}
+
+<!-->Jump to elements for editing - ctrl alt / </!-->
+.container-fluid>h2+p>lorem^p>a
+
+
+</body>
+</html>
